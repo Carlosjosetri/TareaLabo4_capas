@@ -36,17 +36,39 @@
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
-				
+				<span class="label-input100">Nombre del producto</span>
 					<span class="label-input100" th:errors="*{nombre}"  style="color:#FF0000; font-size: 12px" ></span>
-					<input class="input100" th:field="*{nombre}" type="text" name="nombre" placeholder="Nombre">
+					<input class="input100" th:field="*{nombre}" type="text" name="nombre" placeholder="chile">
 					<span class="focus-input100"></span>
 				</div>
 				
 					<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Description is required">
+					<span class="label-input100">Descripcion</span>
 					<span class="label-input100" th:errors="*{descripcion}" style="color:#FF0000; font-size: 12px" ></span>
-					<input class="input100" th:field="*{descripcion}" type="text" name="descripcion" placeholder="Descripcion">
+					<input class="input100" th:field="*{descripcion}" type="text" name="descripcion" placeholder="chiloso">
+				</div>
+				
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Price is required">
+				<span class="label-input100">Precio</span>
+					<span class="label-input100" th:errors="*{precio}" style="color:#FF0000; font-size: 12px" ></span>
+					<input class="input100" th:field="*{precio}" type="number" name="precio" placeholder="5">
 				</div>
 
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Expiration is required">
+				<span class="label-input100">Fecha de vencimiento</span>
+					<span class="label-input100" th:errors="*{vencimiento}"  style="color:#FF0000; font-size: 12px" ></span>
+					<input class="input100" th:field="*{vencimiento}" type="text" name="vencimiento" placeholder="00/12/2568">
+				</div>
+
+		<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							Submit
+						</button>
+					</div>
+				</div>
 		
 			</form>
 		</div>
